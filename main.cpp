@@ -10,7 +10,11 @@ int fourOperation() {
     cout << "How are you today?" << endl;
 
     deger1++;
+    ++deger1;
+    deger1 = deger1 + 5;
+
     deger1 += 5;
+
     cout << deger1 << endl;
     cout << "Enter a: ";
     cin >> a;
@@ -113,6 +117,42 @@ int infinity() {
     } while (x > 0);
 };
 
+int switchCondition() {
+  int yas = 88;
+  switch (yas) {
+      case 18:
+          cout << "Genç";
+          break;
+      case 41:
+          cout << "Yetişkin";
+          break;
+      case 65:
+          cout << "Kıdemli";
+          break;
+      default:
+          cout << "Sınıflandırma Dışı";
+    }
+};
+
+int logicOperators() {
+    int age = 20;
+    int score = 80;
+    if (age > 18 && age < 50 && score > 50) {
+        cout << "Accepted" << endl;
+    };
+
+    int x = 16;
+    int y = 90;
+    if (x > 20 || y >50) {
+        cout << "Done" << endl;
+    };
+
+    int reverse = 15;
+    if ( !(reverse > 20) ) {
+        cout << "It's Reverse" << endl;
+    };
+}
+
 int main() {
     //fourOperation();
     //ifElseCondition();
@@ -120,5 +160,8 @@ int main() {
     //forCondition();
     //doWhileCondition();
     //infinity();
+    //switchCondition();
+    //switchTest();
+    logicOperators();
     return 0;
 }
